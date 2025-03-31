@@ -1,12 +1,348 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="1;templates/main.html">
-        <title>Page Redirection</title>
-    </head>
-    <body>
-        If you are not redirected automatically, 
-        follow the <a href="templates/main.html">link to the documentation</a>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Global Travel Agency - Your premier destination for customized tour packages across Asia and beyond">
+    <title>Global Travel Agency | Discover Your Dream Vacation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to Content Link for Accessibility -->
+    <!--- <a class="skip-link" href="#main-content">Skip to main content</a>-->
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <!--<span class="logo-icon"><i class="fas fa-globe-asia"></i></span>-->
+                    <img src="/images/kent.jpg" width="80" height="80">
+                    <span class="logo-text">Kent Holidays (S) Pte Ltd</span>
+                </a>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle">
+                                Tour Packages <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-column">
+                                    <h3 class="dropdown-heading">Asia</h3>
+                                    <ul>
+                                        <li><a href="korea.html">Korea</a></li>
+                                        <li><a href="#">Taiwan</a></li>
+                                        <li><a href="#">Japan</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-column">
+                                    <h3 class="dropdown-heading">ASEAN</h3>
+                                    <ul>
+                                        <li><a href="#">Thailand</a></li>
+                                        <li><a href="#">Vietnam</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-column">
+                                    <h3 class="dropdown-heading">China</h3>
+                                    <ul>
+                                        <li><a href="#">Beijing</a></li>
+                                        <li><a href="#">Xiamen</a></li>
+                                        <li><a href="#">Shenzhen</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle">
+                                Customized Programme <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="schools.html">School Trip</a></li>
+                                    <li><a href="#">Corporate Retreat</a></li>
+                                    <li><a href="#">Family Package</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle">
+                                Cruise Packages <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Genting Dreams</a></li>
+                                    <li><a href="#">Anthem of the Seas</a></li>
+                                    <li><a href="#">Ovation of the Seas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner with Auto-Scrolling -->
+    <section class="hero-banner">
+        <div class="hero-slides">
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/asia.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Discover Asia's Hidden Gems</h1>
+                        <p class="hero-subtitle">Tailored travel experiences that go beyond the ordinary</p>
+                        <a href="#featured-tours" class="hero-button">Explore Tours</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/cruise.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Luxury Cruise Adventures</h1>
+                        <p class="hero-subtitle">Sail to exotic destinations with world-class amenities</p>
+                        <a href="#" class="hero-button">View Cruises</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-controls">
+            <button class="hero-prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+            <div class="hero-dots"></div>
+            <button class="hero-next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Featured Tours Section -->
+        <section id="featured-tours" class="section featured-tours">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Signature Tours</h2>
+                    <p class="section-subtitle">Curated experiences for unforgettable journeys</p>
+                </div>
+                
+                <div class="tour-grid">
+                    <article class="tour-card">
+                        <div class="tour-image">
+                            <img src="images/seoulsky.jpg" alt="Seoul cityscape with modern buildings" >
+                            <div class="tour-badge">Bestseller</div>
+                        </div>
+                        <div class="tour-content">
+                            <h3 class="tour-title">6D4N Seoul Adventure</h3>
+                            <div class="tour-meta">
+                                <span class="tour-duration"><i class="far fa-calendar-alt"></i> 6 Days</span>
+                                <span class="tour-destinations"><i class="fas fa-map-marker-alt"></i> 4 Cities</span>
+                            </div>
+                            <p class="tour-description">Experience the vibrant culture of Seoul with palace tours, street food adventures, and shopping in Myeongdong.</p>
+                            <div class="tour-footer">
+                                <div class="tour-price">
+                                    <span class="from">From</span>
+                                    <span class="amount">$899</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+                                <a href="korea.html" class="tour-button">View Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tour-card">
+                        <div class="tour-image">
+                            <img src="images/waterfall.jpg" alt="Jeju Island landscape with waterfalls">
+                            <div class="tour-badge">New</div>
+                        </div>
+                        <div class="tour-content">
+                            <h3 class="tour-title">6D5N Jeju Island Escape</h3>
+                            <div class="tour-meta">
+                                <span class="tour-duration"><i class="far fa-calendar-alt"></i> 6 Days</span>
+                                <span class="tour-destinations"><i class="fas fa-map-marker-alt"></i> Jeju Island</span>
+                            </div>
+                            <p class="tour-description">Discover the natural wonders of Jeju with visits to volcanic craters, waterfalls, and pristine beaches.</p>
+                            <div class="tour-footer">
+                                <div class="tour-price">
+                                    <span class="from">From</span>
+                                    <span class="amount">$1,199</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+                                <a href="#" class="tour-button">View Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tour-card">
+                        <div class="tour-image">
+                            <img src="images/greatwall.jpg" alt="Great Wall of China">
+                        </div>
+                        <div class="tour-content">
+                            <h3 class="tour-title">8D7N China Explorer</h3>
+                            <div class="tour-meta">
+                                <span class="tour-duration"><i class="far fa-calendar-alt"></i> 8 Days</span>
+                                <span class="tour-destinations"><i class="fas fa-map-marker-alt"></i> Beijing, Xiamen</span>
+                            </div>
+                            <p class="tour-description">Walk the Great Wall, explore Forbidden City, and experience China's rich history and modern marvels.</p>
+                            <div class="tour-footer">
+                                <div class="tour-price">
+                                    <span class="from">From</span>
+                                    <span class="amount">$1,299</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+                                <a href="#" class="tour-button">View Details</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-footer">
+                    <a href="#" class="view-all-button">View All Tour Packages <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Traveler Stories</h2>
+                    <p class="section-subtitle">What our customers say about their experiences</p>
+                </div>
+
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "The Seoul tour exceeded all expectations! Our guide was knowledgeable and the itinerary perfectly balanced culture, food, and free time."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="images/user2.jpg" alt="Sarah Lim" class="author-image">
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Lim</h4>
+                                <p class="author-tour">6D4N Seoul Adventure</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Jeju Island was paradise! The hotel selection was excellent and the included activities showed us the real beauty of Korea beyond Seoul."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="images/user1.jpg" alt="James Wong" class="author-image">
+                            <div class="author-info">
+                                <h4 class="author-name">James Wong</h4>
+                                <p class="author-tour">6D5N Jeju Island Escape</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready for Your Next Adventure?</h2>
+                    <p class="cta-text">Contact our travel specialists to plan your perfect itinerary</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+18001234567" class="cta-button phone-button">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <a href="#contact" class="cta-button email-button">
+                            <i class="fas fa-envelope"></i> Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Global Travel</h3>
+                    <p class="footer-about">Specializing in customized Asian travel experiences since 2010. We create unforgettable journeys tailored to your preferences.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Customized Programme</a></li>
+                        <li><a href="#">Cruise Packages</a></li>
+                        <li><a href="korea.html">Korea Tours</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Travel Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <address class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i>400 Orchard Road, #14-08 (Front Block), Orchard Towers, Sinapore 238875</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+6561234567">+65 6534 1033</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@globaltravel.com">sales@kentholidays.com</a></p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 10am-6pm | Sat/Sun: Closed</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <p class="footer-copyright">&copy; 2025 Kent Holidays (S) Pte Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>

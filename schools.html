@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational School Trips | Global Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (Same as homepage) -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <!--<span class="logo-icon"><i class="fas fa-globe-asia"></i></span>-->
+                    <img src="/images/kent.jpg" width="80" height="80">
+                    <span class="logo-text">Kent Holidays (S) Pte Ltd</span>
+                </a>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle">
+                                Tour Packages <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-column">
+                                    <h3 class="dropdown-heading">Asia</h3>
+                                    <ul>
+                                        <li><a href="korea.html">Korea</a></li>
+                                        <li><a href="#">Taiwan</a></li>
+                                        <li><a href="#">Japan</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-column">
+                                    <h3 class="dropdown-heading">ASEAN</h3>
+                                    <ul>
+                                        <li><a href="#">Thailand</a></li>
+                                        <li><a href="#">Vietnam</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-column">
+                                    <h3 class="dropdown-heading">China</h3>
+                                    <ul>
+                                        <li><a href="#">Beijing</a></li>
+                                        <li><a href="#">Xiamen</a></li>
+                                        <li><a href="#">Shenzhen</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle">
+                                Customized Programme <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="schools.html">School Trip</a></li>
+                                    <li><a href="#">Corporate Retreat</a></li>
+                                    <li><a href="#">Family Package</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle">
+                                Cruise Packages <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Genting Dreams</a></li>
+                                    <li><a href="#">Anthem of the Seas</a></li>
+                                    <li><a href="#">Ovation of the Seas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- School Trip Banner -->
+    <section class="country-banner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80')">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Educational School Trips</h1>
+                <p>Industry-focused learning experiences for Singapore institutions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- School Trip Programs -->
+    <main class="container school-trip-programs">
+        <section class="program-intro">
+            <h2>Customized Programs for Singapore Institutions</h2>
+            <p>We design specialized itineraries that align with your curriculum and learning objectives, featuring industry visits, cultural immersion, and hands-on workshops.</p>
+        </section>
+
+        <!-- SP Program -->
+        <article class="program-card">
+            <div class="program-image">
+                <img src="images/sp_shandong.JPG" alt="Singapore Polytechnic students" loading="lazy">
+                <div class="program-badge">Most Popular</div>
+            </div>
+            <div class="program-details">
+                <h3>Singapore Polytechnic Special Program</h3>
+                <div class="program-meta">
+                    <span><i class="fas fa-calendar-alt"></i> 9 Days</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Shandong, CHINA</span>
+                </div>
+                <ul class="program-features">
+                    <li><i class="fas fa-check-circle"></i> AI -focused industry visits</li>
+                    <li><i class="fas fa-check-circle"></i> University partner collaborations</li>
+                    <li><i class="fas fa-check-circle"></i> Innovation lab workshops</li>
+                    <li><i class="fas fa-check-circle"></i> Cultural exchange activities</li>
+                </ul>
+                <div class="program-footer">
+                    <div class="program-price">
+                        <span class="from">From</span>
+                        <span class="amount">$2,300</span>
+                        <span class="per-person">per student</span>
+                    </div>
+                    <div class="program-actions">
+                        <a href="#sp-details" class="details-button">More Details</a>
+                        <a href="itineraries/sp-program.pdf" class="download-btn" download>
+                            <i class="fas fa-file-pdf"></i> Sample Itinerary
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Hidden SP Details (shown when "More Details" clicked) -->
+        <div id="sp-details" class="program-expanded-details">
+            <h4>Singapore Polytechnic Program Highlights</h4>
+            <div class="details-grid">
+                <div class="details-column">
+                    <h5><i class="fas fa-industry"></i> Industry Visits</h5>
+                    <ul>
+                        <li>Toyota Manufacturing Plant (Japan)</li>
+                        <li>Samsung Innovation Museum (Korea)</li>
+                        <li>Fraunhofer Institutes (Germany)</li>
+                    </ul>
+                </div>
+                <div class="details-column">
+                    <h5><i class="fas fa-flask"></i> Workshops</h5>
+                    <ul>
+                        <li>Robotics programming</li>
+                        <li>Green energy solutions</li>
+                        <li>3D printing applications</li>
+                    </ul>
+                </div>
+                <div class="details-column">
+                    <h5><i class="fas fa-graduation-cap"></i> Learning Outcomes</h5>
+                    <ul>
+                        <li>Global industry perspectives</li>
+                        <li>Cross-cultural teamwork</li>
+                        <li>Innovation methodologies</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="close-details">Close Details</button>
+        </div>
+
+        <!-- ITE Program -->
+        <article class="program-card">
+            <div class="program-image">
+                <img src="images/ITE.png" alt="ITE students" loading="lazy">
+                <div class="program-badge">New Program</div>
+            </div>
+            <div class="program-details">
+                <h3>Institute of Technical Education Special Program</h3>
+                <div class="program-meta">
+                    <span><i class="fas fa-calendar-alt"></i> 4-5 Days</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Malaysia/Thailand/Vietnam</span>
+                </div>
+                <ul class="program-features">
+                    <li><i class="fas fa-check-circle"></i> Vocational training center visits</li>
+                    <li><i class="fas fa-check-circle"></i> Hands-on technical workshops</li>
+                    <li><i class="fas fa-check-circle"></i> Industry certification sessions</li>
+                    <li><i class="fas fa-check-circle"></i> Cultural immersion activities</li>
+                </ul>
+                <div class="program-footer">
+                    <div class="program-price">
+                        <span class="from">From</span>
+                        <span class="amount">$899</span>
+                        <span class="per-person">per student</span>
+                    </div>
+                    <div class="program-actions">
+                        <a href="#ite-details" class="details-button">More Details</a>
+                        <a href="itineraries/ite-program.pdf" class="download-btn" download>
+                            <i class="fas fa-file-pdf"></i> Sample Itinerary
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Hidden ITE Details (shown when "More Details" clicked) -->
+        <div id="ite-details" class="program-expanded-details">
+            <h4>ITE Program Highlights</h4>
+            <div class="details-grid">
+                <div class="details-column">
+                    <h5><i class="fas fa-tools"></i> Technical Visits</h5>
+                    <ul>
+                        <li>Automotive training centers (Thailand)</li>
+                        <li>Precision engineering facilities (Malaysia)</li>
+                        <li>Hospitality training institutes (Vietnam)</li>
+                    </ul>
+                </div>
+                <div class="details-column">
+                    <h5><i class="fas fa-hands-helping"></i> Practical Sessions</h5>
+                    <ul>
+                        <li>CNC machine operation</li>
+                        <li>Electrical systems troubleshooting</li>
+                        <li>Culinary arts masterclasses</li>
+                    </ul>
+                </div>
+                <div class="details-column">
+                    <h5><i class="fas fa-award"></i> Outcomes</h5>
+                    <ul>
+                        <li>Regional industry exposure</li>
+                        <li>Practical skill enhancement</li>
+                        <li>Professional networking</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="close-details">Close Details</button>
+        </div>
+
+        <!-- Testimonials Section -->
+        <section class="student-testimonials">
+            <h2>Student Experiences</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "My experience on this overseas student exchange program to China was truly enriching. The trip was well-organized, with comfortable accommodations and a great variety of buffet-style meals provided daily. I also had the opportunity to explore cutting-edge AI technologies like DeepSeek, interact with robots, and even learn traditional crafts like chopstick-making. One of the highlights was witnessing a Tai Chi master in action, which was both inspiring and culturally immersive. This trip gave me a deeper appreciation for both innovation and tradition, making it an unforgettable learning journey."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="images/louis.jpeg" alt="Louis" loading="lazy">
+                            <div>
+                                <h4>Louis Yeo, @louisy.jpg</h4>
+                                <p>Singapore Polytechnic, Information Technology</p>
+                                <p class="trip-detail">Shenzhen Shandong, March 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <blockquote>
+                            "As an ITE student, the hands-on sessions at Bangkok's technical college boosted my confidence tremendously. The instructors were patient and knowledgeable, and I made friends with local students too!"
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Ahmad Bin Ismail" loading="lazy">
+                            <div>
+                                <h4>Ahmad Bin Ismail</h4>
+                                <p>ITE College West, Mechanical Engineering</p>
+                                <p class="trip-detail">Thailand Vocational Exchange, July 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inquiry Form -->
+        <section class="inquiry-form">
+            <h2>Request Custom Program Details</h2>
+            <form id="school-inquiry">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="school-name">Institution Name</label>
+                        <input type="text" id="school-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-person">Contact Person</label>
+                        <input type="text" id="contact-person" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="program-interest">Program of Interest</label>
+                        <select id="program-interest" required>
+                            <option value="">Select Program</option>
+                            <option value="sp">Singapore Polytechnic Program</option>
+                            <option value="ite">ITE Program</option>
+                            <option value="custom">Custom Program</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Special Requirements</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Submit Inquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer (Same as homepage) -->
+    <footer class="main-footer">
+        <!-- Copy footer from index.html -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Toggle program details
+        document.querySelectorAll('.details-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).classList.add('show');
+                document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Close details
+        document.querySelectorAll('.close-details').forEach(button => {
+            button.addEventListener('click', function() {
+                this.parentElement.classList.remove('show');
+            });
+        });
+
+        // Form submission
+        document.getElementById('school-inquiry').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you within 2 working days.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
